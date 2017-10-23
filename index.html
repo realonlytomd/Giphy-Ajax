@@ -1,9 +1,35 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Giphy-Ajax Homework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
+	
+	<div class="container">
+				
+		<h1>Pick a TV show!</h1>
+		<h2>(and add your own)</h2>
+
+<!-- Buttons will be rendered here -->
+		<div id="button-section"></div>
+
+			<form id="userAdditions">
+			      <label for="tvshowInput">Type your TV show here.</label>
+			      <input type="text" id="tvshowInput"><br>
+			      <input id="newAdd" type="submit" value="now Click!">
+    		</form>
+
+		    <div id="gifs-section"></div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>

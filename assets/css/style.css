@@ -1,0 +1,26 @@
+body {
+	background-image: url("../images/tvs.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+button {
+	background-color: black;
+	color: white;
+	margin: 10px;
+}
+
+div,
+form,
+input {
+      margin: 10px;
+    }
+
