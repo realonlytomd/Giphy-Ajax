@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	var tvshows = ["bones", "mash", "walking dead", "hogans heroes", "will & grace",
 	  "conviction", "doctor who", "people of earth", "good place", "barefoot contessa",
-	  "schitt's creek", "veep", "american gods", "game of thrones", "rehab addict",
-	   "berlin station", "lucifer", "good wife", "12 monkeys"];
+	  "schitt's creek", "veep", "american gods", "game of thrones", "berlin station", 
+	  "lucifer", "good wife", "12 monkeys"];
 
 	// make the buttons
 
@@ -15,14 +15,14 @@ $(document).ready(function() {
         // create loop to go through the array of shows
 		for (var i = 0; i < tvshows.length; i++) {
 
-			var a = $("<button>");
+			var holder = $("<button>");
 			
-			a.addClass("show");
-			a.attr("data-name", tvshows[i]);
-			a.text(tvshows[i]);
-			$("#button-section").append(a);
+			holder.addClass("show");
+			holder.attr("data-name", tvshows[i]);
+			holder.text(tvshows[i]);
+			$("#button-section").append(holder);
 		}
-		//console.log(tvshows);
+		
 	}
 
 	// add the click event to the input form, takes the user input and adds to buttons above
@@ -31,14 +31,16 @@ $(document).ready(function() {
         event.preventDefault();
 
         // Take the text provided by the user (value) and trim any white space
-        var show = $("#tvshowInput").val().trim();
+        var newShow = $("#tvshowInput").val().trim();
 
         // take that new addition, and put in the tvshows array with previous shows
-        tvshows.push(show);
+        tvshows.push(newShow);
 
         // re-render the buttons from that newly added to array
         renderButtons();
-      });
+        //clear out the input field
+		$("#tvshowInput").val("");
+    });
 
 	// click event function to make the buttons get ratings and gifs from giphy 
 	// and display static gifs
@@ -86,7 +88,8 @@ $(document).ready(function() {
 				showImages.addClass("gif");
 				console.log(showImages);
 
-            // put the p with ratings and the showImages with src and data into temp div
+            // put the p with ratings and the showImages with src and data 
+            // into the temporary div
 				showDiv.append(p);
 				showDiv.append(showImages);
 
