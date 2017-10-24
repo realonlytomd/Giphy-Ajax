@@ -5,11 +5,16 @@ body {
 }
 
 h1 {
+	font-size: 68px;
 	text-align: center;
+	margin-top: 20px;
 }
 
 h2 {
+	font-size: 48px;
 	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 button {
@@ -18,10 +23,24 @@ button {
 	margin: 10px;
 }
 
+form {
+	position: absolute;
+	right: 30px;
+	margin: 10px;
+}
+
+#gifs-section {
+	margin-top: 70px;
+}
+
+.combo {
+	float: left;
+}
+
 div,
-form,
 label,
-input {
+input,
+p {
       margin: 10px;
     }
 

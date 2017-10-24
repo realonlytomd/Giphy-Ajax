@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	console.log("hello");
 
-	var tvshows = ["bones", "mash", "walking dead", "hogans heroes", "will & grace",
+	var tvshows = ["bones", "stargate SG-1", "walking dead", "serenity", "will & grace",
 	  "conviction", "doctor who", "people of earth", "good place", "barefoot contessa",
 	  "schitt's creek", "veep", "american gods", "game of thrones", "berlin station", 
 	  "lucifer", "good wife", "12 monkeys"];
@@ -50,7 +50,8 @@ $(document).ready(function() {
 
 		$("#gifs-section").empty();
 
-      // get the name of the show (button) and make a variable to go into the query
+      // get the name of the show (from the button attribute) and make a 
+      // variable to go into the query
 		var nameofShow = $(this).attr("data-name");
 
       // Make the queryURL with that show name and my API key
@@ -65,7 +66,7 @@ $(document).ready(function() {
 			method: "GET"
 		}).done(function(response) {
 
-          // storing kist the .data from the AJAX request in the results variable
+          // storing the .data from the AJAX request in the results variable
 		var results = response.data;
 		//console.log(results);
 
@@ -74,6 +75,7 @@ $(document).ready(function() {
 
             // make a new div to later put in our established div in html
 				var showDiv = $("<div>");
+				showDiv.addClass("combo");
 
             // Make a paragraph to put in the rating of the returned gif
 				var p = $("<p>").text("Rating: " + results[i].rating);
@@ -93,7 +95,7 @@ $(document).ready(function() {
 				showDiv.append(p);
 				showDiv.append(showImages);
 
-            // put the temp div into the div established in the html file. append
+            // put the temp div into the div established in the html 
 			$("#gifs-section").append(showDiv);
 			}
 
