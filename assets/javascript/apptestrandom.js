@@ -65,18 +65,18 @@ $(document).ready(function() {
 			url: queryURL,
 			method: "GET"
 		}).done(function(response) {
-			//here, response.data indeces are 0-99
+			//here, response.data is 0-19
 		// take a random set of 10 of the 100 responses
+		// var x = Math.floor(Math.random() * 100);
 		
 			console.log(response.data);
 			var newResponse = [];
 			for (var j = 0; j < 10; j++) {
-				
 				var x = Math.floor(Math.random() * 100);
-			//	console.log(x);
+				console.log(x);
 				newResponse[j] = response.data[x];
 			}
-			//  console.log(newResponse);
+			console.log(newResponse);
 
         // storing the .data from the AJAX request in the results variable
 		var results = newResponse;
