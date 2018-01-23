@@ -1,0 +1,90 @@
+$.ajax({
+
+	url: queryURL,
+
+	method: "GET"
+
+}).done(function(response) {
+  
+	console.log("done!");
+
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+}).done(function(response) {
+	console.log("done!");
+});
+

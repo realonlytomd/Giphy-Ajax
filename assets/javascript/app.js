@@ -2,9 +2,8 @@ $(document).ready(function() {
 	console.log("hello");
 
 	var tvshows = ["bones", "stargate SG-1", "walking dead", "serenity", "will & grace",
-	  "conviction", "doctor who", "people of earth", "good place", "barefoot contessa",
-	  "schitt's creek", "veep", "american gods", "game of thrones", "berlin station", 
-	  "lucifer", "good wife", "12 monkeys"];
+	 "doctor who", "people of earth", "good place", "schitt's creek", "veep", 
+	 "american gods", "game of thrones", "lucifer", "good wife"];
 
 	// make the buttons
 
