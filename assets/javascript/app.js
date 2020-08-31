@@ -70,16 +70,16 @@ $(document).ready(function() {
 			console.log(response.data);
 			var newResponse = [];
 			for (var j = 0; j < 10; j++) {
-				
-				var x = Math.floor(Math.random() * 100);
-			//	console.log(x);
+				// random integer including min (0), and excluding max (response.data.length)
+				//Math.floor(Math.random() * (max - min) ) + min;
+				var x = Math.floor(Math.random() * response.data.length);
+				console.log(x);
 				newResponse[j] = response.data[x];
 			}
-			//  console.log(newResponse);
 
         // storing the .data from the AJAX request in the results variable
 		var results = newResponse;
-		//console.log(results);
+		// console.log(results);
 
           // Loop to go through each gif in response - had set limit to 10
 			for (var i = 0; i < results.length; i++) {
